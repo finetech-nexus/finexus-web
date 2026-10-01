@@ -1,0 +1,43 @@
+replicaCount: 1
+
+image:
+  repository: nexusbank/finexus-web
+  tag: latest
+  pullPolicy: IfNotPresent
+
+containerPort: 8080
+
+readinessProbe:
+  httpGet:
+    path: /health
+    port: http
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  timeoutSeconds: 3
+  failureThreshold: 6
+
+livenessProbe:
+  httpGet:
+    path: /health
+    port: http
+  initialDelaySeconds: 15
+  periodSeconds: 30
+  timeoutSeconds: 3
+  failureThreshold: 3
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: false
+
+resources: {}
+
+podAnnotations: {}
+podLabels: {}
+
+nodeSelector: {}
+affinity: {}
+tolerations: []

@@ -164,13 +164,6 @@ export default function App() {
             <div className="hero-mesh" />
             <div className="hero-orb hero-orb-a" />
             <div className="hero-orb hero-orb-b" />
-            <div className="hero-collage">
-              {HERO_SHOTS.map((shot, index) => (
-                <figure key={shot.src} className={`hero-shot hero-shot-${index}`}>
-                  <img src={shot.src} alt="" />
-                </figure>
-              ))}
-            </div>
           </div>
 
           <div className="shell hero-shell">
@@ -188,6 +181,13 @@ export default function App() {
                   {t.nav.trust}
                 </a>
               </div>
+            </div>
+            <div className="hero-collage" aria-hidden>
+              {HERO_SHOTS.map((shot, index) => (
+                <figure key={shot.src} className={`hero-shot hero-shot-${index}`}>
+                  <img src={shot.src} alt="" loading={index === 0 ? "eager" : "lazy"} decoding="async" />
+                </figure>
+              ))}
             </div>
           </div>
         </section>
@@ -321,7 +321,7 @@ export default function App() {
                 <h2>{t.cta.title}</h2>
                 <p>{t.cta.text}</p>
                 <div className="hero-actions">
-                  <a className="btn btn-primary" href="mailto:hello@finexus.io">
+                  <a className="btn btn-primary" href="mailto:miladi.medamine@gmail.com">
                     {t.cta.primary}
                   </a>
                   <a className="btn btn-ghost" href="#download">

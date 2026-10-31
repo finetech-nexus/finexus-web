@@ -392,12 +392,12 @@ export const copies: Record<Lang, Copy> = {
   },
   ar: {
     dir: "rtl",
-    metaTitle: "Finexus — التقنية المالية وراء Nexus Bank",
+    metaTitle: "Finexus — التقنية المالية وراء بنك نكسوس",
     metaDescription:
-      "Nexus Bank من Finexus: بنك عبر الجوال برسوم أقل وبورصة وKYC / AML / GDPR.",
+      "بنك نكسوس من Finexus: بنك عبر الجوال برسوم أقل وبورصة وKYC / AML / GDPR.",
     nav: {
       mission: "لماذا نحن",
-      nexus: "Nexus Bank",
+      nexus: "بنك نكسوس",
       platform: "الوظائف",
       trust: "الامتثال",
       download: "تحميل",
@@ -414,7 +414,7 @@ export const copies: Record<Lang, Copy> = {
       kicker: "مهمتنا",
       title: "بنك يكلّف أقل ويفعل أكثر.",
       text:
-        "تبني Finexus تطبيق Nexus Bank للخروج من النموذج البنكي الثقيل: رسوم أقل، إجراءات بسيطة، ووصول إلى البورصة من الهاتف نفسه.",
+        "تبني Finexus تطبيق بنك نكسوس للخروج من النموذج البنكي الثقيل: رسوم أقل، إجراءات بسيطة، ووصول إلى البورصة من الهاتف نفسه.",
       items: [
         {
           title: "رسوم أقل",
@@ -426,7 +426,7 @@ export const copies: Record<Lang, Copy> = {
         },
         {
           title: "استثمر في البورصة",
-          text: "افتح محفظة، اشترِ وبِع الأدوات المدرجة، وتابع مراكزك من Nexus Bank.",
+          text: "افتح محفظة، اشترِ وبِع الأدوات المدرجة، وتابع مراكزك من بنك نكسوس.",
         },
       ],
     },
@@ -434,8 +434,8 @@ export const copies: Record<Lang, Copy> = {
       kicker: "التطبيق",
       title: "خدمات يومية + استثمار.",
       text:
-        "اطّلع وأرسل وادفع واشترك — واستثمر في البورصة. Nexus Bank يجمع الاثنين في تطبيق واحد.",
-      cta: "ثبّت Nexus Bank",
+        "اطّلع وأرسل وادفع واشترك — واستثمر في البورصة. بنك نكسوس يجمع الاثنين في تطبيق واحد.",
+      cta: "ثبّت بنك نكسوس",
       features: [
         {
           title: "رؤية أموالي",
@@ -461,7 +461,7 @@ export const copies: Record<Lang, Copy> = {
     },
     platform: {
       kicker: "تفاصيل الوظائف",
-      title: "ما يمكنك فعله في Nexus Bank.",
+      title: "ما يمكنك فعله في بنك نكسوس.",
       text: "من الحساب الجاري إلى البورصة: لكل جزء من التطبيق دور واضح.",
       items: [
         {
@@ -490,7 +490,7 @@ export const copies: Record<Lang, Copy> = {
       kicker: "الثقة والتنظيم",
       title: "KYC وAML وGDPR — مدمجة من أول استخدام.",
       text:
-        "Nexus Bank ليس مفيداً فقط: التحقق من الهوية ومكافحة غسل الأموال وحماية البيانات جزء من المنتج.",
+        "بنك نكسوس ليس مفيداً فقط: التحقق من الهوية ومكافحة غسل الأموال وحماية البيانات جزء من المنتج.",
       items: [
         {
           title: "KYC",
@@ -512,13 +512,13 @@ export const copies: Record<Lang, Copy> = {
     },
     download: {
       kicker: "تثبيت",
-      title: "حمّل Nexus Bank.",
+      title: "حمّل بنك نكسوس.",
       text: "متاح على iOS وAndroid. ثبّت التطبيق وابدأ خلال دقائق.",
       apple: "App Store",
       google: "Google Play",
     },
     proof: {
-      kicker: "مع Nexus Bank",
+      kicker: "مع بنك نكسوس",
       title: "خدمات بنكية وبطاقات وبورصة — بلا تعقيد.",
       items: [
         {
@@ -540,13 +540,13 @@ export const copies: Record<Lang, Copy> = {
       ],
     },
     cta: {
-      title: "جاهز لتجربة Nexus Bank؟",
+      title: "جاهز لتجربة بنك نكسوس؟",
       text: "ثبّت التطبيق أو استكشف الوظائف أو راسلنا لعرض توضيحي.",
       primary: "راسل Finexus",
       secondary: "العودة إلى الوظائف",
     },
     footer: {
-      tagline: "نصنع Nexus Bank",
+      tagline: "نصنع بنك نكسوس",
       rights: "جميع الحقوق محفوظة.",
     },
   },

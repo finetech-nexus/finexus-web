@@ -41,7 +41,7 @@ CI (GitHub Actions on `develop` / `main`):
 
 ## GitOps
 
-Deployed via Flux (`k8s-gitops` → `apps/finexus-web`) on **https://finexus.nbank.fr**.
+Deployed via Flux (`k8s-gitops` → `apps/finexus-web`) on **https://nbank.fr**.
 
 ## Contenu
 

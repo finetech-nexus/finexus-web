@@ -164,6 +164,13 @@ export default function App() {
             <div className="hero-mesh" />
             <div className="hero-orb hero-orb-a" />
             <div className="hero-orb hero-orb-b" />
+            <div className="hero-collage">
+              {HERO_SHOTS.map((shot, index) => (
+                <figure key={shot.src} className={`hero-shot hero-shot-${index}`}>
+                  <img src={shot.src} alt="" loading={index === 0 ? "eager" : "lazy"} decoding="async" />
+                </figure>
+              ))}
+            </div>
           </div>
 
           <div className="shell hero-shell">
@@ -181,13 +188,6 @@ export default function App() {
                   {t.nav.trust}
                 </a>
               </div>
-            </div>
-            <div className="hero-collage" aria-hidden>
-              {HERO_SHOTS.map((shot, index) => (
-                <figure key={shot.src} className={`hero-shot hero-shot-${index}`}>
-                  <img src={shot.src} alt="" loading={index === 0 ? "eager" : "lazy"} decoding="async" />
-                </figure>
-              ))}
             </div>
           </div>
         </section>

@@ -570,8 +570,8 @@ export const STORE_LINKS = {
   apple:
     (import.meta.env.VITE_APP_STORE_URL as string | undefined) ||
     "https://apps.apple.com/app/nexus-bank",
-  /** Served from the finexus-web Docker image at /downloads/nexus-bank.apk */
+  /** Served from the finexus-web Docker image (versioned path avoids stale CDN HTML). */
   google:
     (import.meta.env.VITE_ANDROID_APK_URL as string | undefined) ||
-    "/downloads/nexus-bank.apk",
+    "/downloads/nexus-bank-0.0.1.apk",
 };

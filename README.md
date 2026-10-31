@@ -18,14 +18,14 @@ npm run preview
 
 ## Docker
 
-L’image embarque l’APK Android Nexus Bank. Téléchargement public : `/downloads/nexus-bank.apk`.
+L’image embarque l’APK Android Nexus Bank. Téléchargement public : `/downloads/nexus-bank-0.0.1.apk` (alias `/downloads/nexus-bank.apk`).
 
 ```bash
 # Optionnel : forcer une nouvelle URL EAS
 docker build --build-arg APK_URL=https://expo.dev/artifacts/eas/...apk -t nexusbank/finexus-web:local .
 docker run --rm -p 8080:8080 nexusbank/finexus-web:local
 # http://127.0.0.1:8080/health
-# http://127.0.0.1:8080/downloads/nexus-bank.apk
+# http://127.0.0.1:8080/downloads/nexus-bank-0.0.1.apk
 ```
 
 Variable CI optionnelle : `NEXUS_BANK_APK_URL` (sinon l’URL par défaut du Dockerfile).

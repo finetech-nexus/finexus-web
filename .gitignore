@@ -11,3 +11,6 @@ dist-ssr
 .idea
 *.log
 coverage
+# Large binary; Docker/CI fetches it via APK_URL when missing
+public/downloads/*.apk
+!public/downloads/.gitkeep

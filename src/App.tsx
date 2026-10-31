@@ -80,8 +80,9 @@ function StoreButtons({
       <a
         className="store-btn store-btn-google"
         href={STORE_LINKS.google}
-        target="_blank"
-        rel="noopener noreferrer"
+        download={STORE_LINKS.google.startsWith("/") ? "nexus-bank.apk" : undefined}
+        target={STORE_LINKS.google.startsWith("/") ? undefined : "_blank"}
+        rel={STORE_LINKS.google.startsWith("/") ? undefined : "noopener noreferrer"}
       >
         <PlayIcon />
         <span className="store-btn-text">

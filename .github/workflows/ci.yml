@@ -59,6 +59,8 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
+          build-args: |
+            APK_URL=${{ vars.NEXUS_BANK_APK_URL != '' && vars.NEXUS_BANK_APK_URL || 'https://expo.dev/artifacts/eas/DVs0mq5UquL262sqk4drwXmKJrTo0CNDLYz4D-riK9M.apk' }}
           tags: |
             ${{ env.DOCKER_ORGANIZATION }}/${{ env.IMAGE_NAME }}:latest
             ${{ env.DOCKER_ORGANIZATION }}/${{ env.IMAGE_NAME }}:${{ steps.sha.outputs.short_sha }}

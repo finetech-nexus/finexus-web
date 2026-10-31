@@ -192,9 +192,9 @@ export const copies: Record<Lang, Copy> = {
     download: {
       kicker: "Installer",
       title: "Téléchargez Nexus Bank.",
-      text: "Disponible sur iOS et Android. Installez l’app et commencez en quelques minutes.",
+      text: "Disponible sur iOS et Android. Téléchargez l’APK Android directement, ou ouvrez l’App Store.",
       apple: "App Store",
-      google: "Google Play",
+      google: "Android APK",
     },
     proof: {
       kicker: "Avec Nexus Bank",
@@ -353,9 +353,9 @@ export const copies: Record<Lang, Copy> = {
     download: {
       kicker: "Install",
       title: "Download Nexus Bank.",
-      text: "Available on iOS and Android. Install the app and get started in minutes.",
+      text: "Available on iOS and Android. Download the Android APK directly, or open the App Store.",
       apple: "App Store",
-      google: "Google Play",
+      google: "Android APK",
     },
     proof: {
       kicker: "With Nexus Bank",
@@ -513,9 +513,9 @@ export const copies: Record<Lang, Copy> = {
     download: {
       kicker: "تثبيت",
       title: "حمّل بنك نكسوس.",
-      text: "متاح على iOS وAndroid. ثبّت التطبيق وابدأ خلال دقائق.",
+      text: "متاح على iOS وAndroid. حمّل ملف APK لأندرويد مباشرة، أو افتح App Store.",
       apple: "App Store",
-      google: "Google Play",
+      google: "Android APK",
     },
     proof: {
       kicker: "مع بنك نكسوس",
@@ -565,12 +565,13 @@ export const HERO_SHOTS = [
   { src: "/hero/trust.png", alt: "Secure by design" },
 ] as const;
 
-/** Override via VITE_APP_STORE_URL / VITE_PLAY_STORE_URL when store listings are live. */
+/** Override via VITE_APP_STORE_URL / VITE_ANDROID_APK_URL when store listings are live. */
 export const STORE_LINKS = {
   apple:
     (import.meta.env.VITE_APP_STORE_URL as string | undefined) ||
     "https://apps.apple.com/app/nexus-bank",
+  /** Served from the finexus-web Docker image at /downloads/nexus-bank.apk */
   google:
-    (import.meta.env.VITE_PLAY_STORE_URL as string | undefined) ||
-    "https://play.google.com/store/apps/details?id=io.finexus.nexusbank",
+    (import.meta.env.VITE_ANDROID_APK_URL as string | undefined) ||
+    "/downloads/nexus-bank.apk",
 };
